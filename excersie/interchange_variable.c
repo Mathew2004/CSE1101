@@ -1,10 +1,16 @@
 #include<stdio.h>
 
 int main(){
-    int A,B;
+    int A,B,C;
 
     scanf("%d %d",&A,&B);
 
-    printf("A => %d\n",B);
-    printf("B => %d",B=A);
+    C = A;
+    A = B;
+    B = C;
+
+    
+
+    printf("A => %d\n",A);
+    printf("B => %d",B);
 }
