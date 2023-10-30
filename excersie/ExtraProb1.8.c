@@ -8,7 +8,7 @@ int main(){
 
     fdigit = Num/1000000;
     ldigit = Num%10;
-
+    
     printf("First Digit %d\n",fdigit);
     printf("Last Digit %d",ldigit);
     

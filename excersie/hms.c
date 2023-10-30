@@ -11,7 +11,7 @@ int main(){
     s = sec-(m*60)-(h*3600);
 
     printf("Hours: %d\n",h);
-    printf("Minutes: %d\n",m);
+    printf("Minutes: %d\n",sec%60);
     printf("Seconds: %d\n",s);
 
 
