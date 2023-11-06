@@ -1,15 +1,19 @@
 #include<stdio.h>
 int main(){
-    int a,b,c,d,max;
-    scanf("%d %d %d %d",&a,&b,&c,&d);
+    int n,i,num,min;
+    printf("How many numbers? \n");
+    scanf("%d",&n);
 
-    max=a;
-    if(max<b)
-        max=b;
-    if(max<c)
-        max=c;
-    if(max<d)
-        max=d;
-    printf("Max Num is: %d",max);
-    
+    for(i=1; i<=n; i++){
+        scanf("%d",&num);
+        if(i==1){
+            min = num;
+        }
+        
+        if(num<min){
+            min = num;
+        }
+
+    }
+    printf("Minmum: %d",min);
 }

@@ -1,29 +1,25 @@
 #include<stdio.h>
-int main(){
-    int a,b;
-    char opr;
-    printf("Enter 2 Numbers: \n");
-    scanf("%d %d",&a,&b);
-    printf("Operation to be performed: \n");
-    scanf(" %c",&opr);
 
-    switch (opr)
-    {
-    case '+':
-        printf("%d",a+b);
-        break;
-    case '-':
-        printf("%d",a-b);
-        break;
-    case '*':
-        printf("%d\n",a*b);
-        break;
-    case '/':
-        printf("%d",a/b);
-        break;
-    
-    default:
-        printf("E Kemon Operation :/\n");
-        break;
+int main(){
+    int l,u,i;
+    long long sum=0;
+    printf("Lower Range: ");
+    scanf("%d",&l);
+    printf("Upper Range: ");
+    scanf("%d",&u);
+
+    if(l%3==0)
+            l=l;
+    else if(l%3 == 1)
+        l += 2;
+    else if(l%3 == 2)
+        l += 1;
+
+    for(i=l; i<=u; i+=3){
+       
+            sum += i;
+            
     }
+    printf("Sum is : %lld",sum);
+
 }
