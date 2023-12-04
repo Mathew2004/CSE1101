@@ -12,7 +12,7 @@ int main(){
             l=l;
     else if(l%3 == 1)
         l += 2;
-    else if(l%3 == 2)
+    else 
         l += 1;
 
     for(i=l; i<=u; i+=3){
