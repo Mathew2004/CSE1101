@@ -1,17 +1,15 @@
 #include<stdio.h>
 
 int main(){
-    int x,n;
-    double res=1;
-    scanf("%d %d",&x,&n);
-    
-    for(int i=1; i<=n; i++){
-        res *= x;
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1; i<n; i++){
+        if(n%i == 0){
+            sum += i;
         }
-    
-    if(n==0)   res =1;
-    else if(n>0) printf("%lf",res);
-    else printf("%lf",1/res);
+    }
+    if(sum == n) printf("Perfect Numbers");
+    else printf("Not");
     
   
 }
