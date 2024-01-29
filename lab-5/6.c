@@ -16,7 +16,7 @@ int main(){
         arr[i] = f1+f2;
         f1 = arr[i];
         f2 = t;
-        printf("%d\n",arr[i]);
+        printf("%d ",arr[i]);
         
     }
 
